@@ -1,0 +1,33 @@
+<html> 
+<head> 
+<script src="http://code.jquery.com/jquery-1.8.3.js"></script> 
+<script> 
+
+$( document ).ready(function() { 
+console.log( "ready!" ); 
+
+var data = { 
+"grant_type": "password", 
+"password": "Med4alex", 
+"username": "79653510272", 
+"scope": "read" 
+}; 
+$.ajax({ 
+type: "POST", 
+// url: "http://localhost:9999/oauth/token", 
+url: "https://service-bit-staging.herokuapp.com/oauth/token", 
+headers: 
+{ 
+'Content-Type': 'application/x-www-form-urlencoded', 
+'Authorization': 'Basic ZGV2MjQ6ZGV2MjQ=' 
+}, 
+data: data, 
+success: function(r) { alert(r.access_token); }, 
+error: function (data){ alert(data); } 
+}); 
+
+}); 
+
+</script> 
+</head> 
+</html>
