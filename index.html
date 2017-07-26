@@ -8,18 +8,18 @@ console.log( "ready!" );
 
 var data = { 
 "grant_type": "password", 
-"password": "Med4alex", 
-"username": "79653510272", 
+"password": "", 
+"username": "", 
 "scope": "read" 
 }; 
 $.ajax({ 
 type: "POST", 
 // url: "http://localhost:9999/oauth/token", 
-url: "https://service-bit-staging.herokuapp.com/oauth/token", 
+url: "", 
 headers: 
 { 
 'Content-Type': 'application/x-www-form-urlencoded', 
-'Authorization': 'Basic ZGV2MjQ6ZGV2MjQ=' 
+'Authorization': 'Basic ' 
 }, 
 data: data, 
 success: function(r) { alert(r.access_token); }, 
