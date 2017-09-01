@@ -1,33 +1,14 @@
 <html> 
 <head> 
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script> 
-<script> 
-
-$( document ).ready(function() { 
-console.log( "ready!" ); 
-
-var data = { 
-"grant_type": "password", 
-"password": "", 
-"username": "", 
-"scope": "read" 
-}; 
-$.ajax({ 
-type: "POST", 
-// url: "http://localhost:9999/oauth/token", 
-url: "", 
-headers: 
-{ 
-'Content-Type': 'application/x-www-form-urlencoded', 
-'Authorization': 'Basic ' 
-}, 
-data: data, 
-success: function(r) { alert(r.access_token); }, 
-error: function (data){ alert(data); } 
-}); 
-
-}); 
+<script>
 
 </script> 
+  
+  <body bgcolor="#E6E6FA">
+<h1>Hello world!</h1>
+<p><a href="https://www.w3schools.com">Visit W3Schools.com!</a></p>
+</body>
+  
 </head> 
 </html>
