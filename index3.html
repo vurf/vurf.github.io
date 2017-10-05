@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="timer/css/pomodoro-timer.css" rel="stylesheet">
+  <script type="text/javascript" src="timer/js/pomodoro-timer.js"></script>
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+<body bgcolor="#fafafa">
+
+<div id="jquery-script-menu">
+<div class="jquery-script-clear"></div>
+</div>
+</div>
+  <div class="container" style="margin-top:150px;">
+    <div class="page-header">
+      <h1 class="text-center">Финал</h1>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-body text-center">
+        <div class="timer-time timer-container">
+          <div class="timer-time-set timer-box" id="currentTime">
+            <span id="minutesValue">01</span><span>:</span><span id="secondsValue">00</span><span>:</span><span id="milisecondsValue">00</span>
+          </div>
+          <div class="timer-time-set timer-box" id="nextTime">
+            <span id="minutesNext">01</span><span>:</span><span id="secondsNext">00</span><span>:</span><span id="milisecondsNext">00</span>
+          </div>
+        </div>
+        <div>
+          <button id="restartButton" class="btn btn-warning btn-lg" type="submit" onclick="onResetTimer()">
+            <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span> Сбросить
+          </button>
+          <button id="startButton" class="btn btn-primary btn-lg" type="submit" onclick="onStartTimer()">
+            <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Начать
+          </button>
+          <button id="stopButton" class="btn btn-danger btn-lg" type="submit" onclick="onStopTimer()">
+            <span class="glyphicon glyphicon-stop" aria-hidden="true"></span> Остановить
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
